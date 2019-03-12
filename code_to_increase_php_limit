@@ -1,0 +1,16 @@
+Steps to add php.ini to Wordpress:
+1. In Cpanel under ""files"" select ""File Manager""
+2. In Public_html, create new file by pressing ""+ File"" sign in top left corner
+3. Name the file php.ini and click save
+4. Find php.ini in the folder, right-click it and choose ""edit"" and click ""edit"" again
+5. In the text editor add following code:
+
+memory_limit = 256M
+upload_max_filesize = 50M
+post_max_size = 50M
+max_execution_time = 300
+
+6. Click ""Save changes"" in the top right corner and close the window
+7. Go to Cpanel, and scroll down until you find ""PHP Processes"" 
+8. Click ""Kill Processes""
+9. You can now install a new theme or plugin up until 50Mb, if you want it to be more, just increase the numbers in the code.
